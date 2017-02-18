@@ -6,12 +6,20 @@
   <title>FukuTabi</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  <!-- jQuery -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="style.js"></script>
- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+  
+    <!-- jQuery -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript"  src="lightbox2-master/src/js/lightbox.js"></script>
+  <script type="text/javascript" src="textillate-master/assets/jquery.lettering.js"></script>
+  <script type="text/javascript" src="textillate-master/jquery.textillate.js"></script>
+  
+  <!-- Owl Carousel JS -->
+  <script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
+  
   <script type="text/javascript" src="style.js" charset="Shift_JIS"></script>
-
 
 
   <!-- Mobile Specific Metas–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,6 +31,9 @@
   <!-- CSS–––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="textillate-master/assets/animate.css" type="text/css">
+  <link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+ 
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,31 +42,103 @@
 </head>
 <body>
     <header>
-        
-        
+        <div class="logo_pc"><img src="image/logo.png" class="u-max-full-width"></div>
+        <div class="logo_sp"><img src="image/logo_sp.png" class="u-max-full-width"></div>
     </header>
     
-    <div id="main">
-        
-        
-        
-        
-    </div><!--main-->
+    <div class="container">
+        <div class="row">
+            <div id="main" class="twelve columns">
+                <div id="cover_area" class="owl-carousel owl-theme">
+                    <div><img src="image/america/IMG_0343.jpg"/></div>
+                    <div><img src="image/amami/IMG_2255.jpg"/></div>
+                    <div><img src="image/america/IMG_0352.jpg"/></div>
+                    <div><img src="image/hiroshima/IMG_7559.jpg"/></div>
+                    <div><img src="image/kyoto/IMG_5844.jpg"/></div>
+                </div><!-- #cover -->
+                <ul class="menu">
+                    <li><a class="menu_link" href="top.html#ga">GALLERY</a></li>
+                    <li><a class="menu_link" href="top.html#tr">TRAVEL</a></li>
+                    <li><a class="menu_link" href="top.html#pro">PROFILE</a></li>
+                    <li><a class="menu_link" href="top.html#con">CONTACT</a></li>
+                </ul><!--menu-->
+                <div class="border"></div>
+                <div class="border"></div>
+                
+                <div id="ga">
+                    <h2>GALLERY</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="four columns">
+                                <a href="image/america/IMG_0202.jpg" data-lightbox="roadtrip" ><img class="img_li" src="image/america/IMG_0202.jpg"></a>
+                                <div class="day">2016.10.18</div>
+                            </div>
+                            <div class="four columns" >
+                                <a href="image/hiroshima/IMG_7838.jpg" data-lightbox="roadtrip" ><img class="img_li" src="image/hiroshima/IMG_7838.jpg"></a>
+                                <div class="day">2016.08.24</div>
+                            </div>
+                            <div class="four columns slide-right">
+                                <a href="image/kyoto/IMG_5760.jpg" data-lightbox="roadtrip" ><img class="img_li" src="image/kyoto/IMG_5760.jpg"></a>
+                                <div class="day">2016.06.18</div>
+                            </div>
+                    </div></div>
+                    <div class="more"><a href="gallery.html" class="ef">>>>>>>MORE</a></div>
+                </div>
+                
+                <div id="tr">
+                    <h2>TRAVEL</h2>
+                    <div class="top_tr_list"><a href="diary_america.html">2016.10.18  &nbsp;&nbsp; AMERICA</a></div>
+                    <div class="top_tr_list"><a href="diary_hiroshima.html">2016.08.24   &nbsp;&nbsp;  HIROSHIMA</a></div>
+                    <div class="top_tr_list"><a href="diary_kyoto.html">2016.06.18   &nbsp;&nbsp;  KYOTO</a></div>
+                    <div class="top_tr_list"><a href="diary_amami.html">2015.03.08   &nbsp;&nbsp;  AMAMI</a></div>
+                    <div class="more"><a href="travel.html" class="ef">>>>>>>MORE</a></div>
+                </div>
+                
+                <div id="pro">
+                    <h2>PROFILE</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="four columns"><img style="width:100%;padding-top:10px;" src="image/pro_img.jpg"></div>
+                            <div class="eight columns">
+                                <div class="balloon">
+                                    <h4>Fukumi Koshikawa</h4>
+                                    出身　Yokohama<br>大学　Meiji.univ<br>趣味　Travel Music Fassion
+                                </div>
+                            </div>
+                        </div></div>
+                </div>
+                
+                <div id="con">
+                    <h2>CONTACT</h2>
+                    <a class="square_no">1</a><a class="link" href="">E-Mail</a><br>
+                    <a class="square_no">2</a><a class="link" href="">Instagram</a><br>
+                    <a class="square_no">3</a><a class="link" href="">Facebook</a><br>
+                </div>
+                
+                
+            </div><!--main-->
+        </div><!--row-->
+    </div><!--container-->
     
     <footer>
-        
+     <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <p id="pageTop"><a href="#">PAGE TOP</a></p>
+          <div class="border"></div>
+          <ul>
+            <li><a href="">特定商取引に基づく表記</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+            <li><a href="">マイページ</a></li>
+          </ul>
+          <p class="foot_syomei">copyright (C) FukumiKoahikawa all rights reserved.</p>
+        </div>
+      </div>
+    </div>   
         
         
         
     </footer>
-    
-    
-    
-    
-    
-    
-    
-    
     
     
 </body>

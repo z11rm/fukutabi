@@ -1,0 +1,353 @@
+@charset "utf-8";
+@import "compass";
+
+$myfont :"Bookman Old Style","MS P明朝","MS PMincho",sans-serif;
+$gray : #4d4d4d;
+$accent:#781d1d;
+
+html{
+  text-align: center;
+  font-size: 12px;
+  background-image: url("../image/kami-min.png");
+  font-family: $myfont;
+  background-color: #cdcdcd;
+  color: $gray;
+  @media(max-width:550px){
+      font-size: 18px;
+  }
+}
+//------------------------------------------------------------logo----
+.logo_pc{
+  padding: 50px;
+  @media(max-width:550px){
+    display:none;
+  }
+}
+.logo_sp{
+  padding: 10px;
+  @media(min-width:550px){
+    display:none;
+  }
+}
+
+//------------------------------------------------------------top--
+
+#cover_area{
+    width: 100%;
+    padding: 0;
+    img{
+        width:100%;
+    }
+}
+
+.owl-item{
+      height: 150px;
+      @media(min-width:550px){
+      height: 400px;
+      }
+}
+
+//----------------------------------------------------------menu----
+.menu{
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  margin-bottom:1px;
+}
+.menu li{
+  display: table-cell;
+  vertical-align: middle;
+}
+.menu li a {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 3px 0;
+  @media(min-width:550px){
+    font-size:25px;
+    &:hover{
+      color:$accent;
+    }
+  }
+}
+
+
+.border{
+  border-bottom:#696969 1.5px dashed ;
+  margin-bottom: 1.5px;
+}
+//--------------------------------------------------------img_li
+.img_li{
+  padding-top:10px;
+  width:100%;
+  @media(min-width:550px){
+    &:hover{
+      cursor:pointer;
+      filter: alpha(opacity=60);
+      -ms-filter: "alpha(opacity=60)";
+      -moz-opacity:0.6;
+      -khtml-opacity: 0.6;
+      opacity:0.6;
+      zoom:1;
+    }
+  }
+}
+.day{
+  text-align:left;
+  font-size:10px;
+  @media(min-width:550px){
+    font-size:10px;
+  }
+}
+
+//-------------------------------------------------------more-----
+.more {
+  text-align:right;
+  a{
+    font-size:16px;
+    color:$accent;
+    text-decoration: none;
+    @media(min-width:550px){
+      font-size:20px;
+       &:hover{
+        color:lighten($accent, 20%);
+      }
+    }
+  }
+}
+
+.top_tr_list{
+  text-align:left;
+  a{
+    text-decoration:none;
+    font-size:12px;
+    margin-left:20%;
+    @media(min-width:550px){
+      font-size:18px;
+       &:hover{
+        color:$accent;
+      }
+    }
+  }
+}
+
+
+
+
+//----------------------------------------------------balloon----
+.balloon {
+  font-size:12px;
+  text-align: left;
+  border:1px solid #000;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px;
+  padding: 15px;
+  @media(min-width:550px){
+    font-size:18px;
+    margin: 30px;
+  }
+}
+ @media(min-width:550px){
+    .balloon:before {
+      border:10px solid transparent;
+      border-right-color: #dfdfdf;
+      border-left-width: 0;
+      left:-9px;
+      content:"";
+      display:block;
+      top: 30px;
+      position: absolute;
+      width: 0;
+      z-index: 1;
+    }
+     
+    .balloon:after {
+      border:10px solid transparent;
+      border-right-color:#000;
+      border-left-width:0;
+      left:-10px;
+      content:"";
+      display:block;
+      top:30px;
+      position:absolute;
+      width:0;
+    }
+}
+ @media(max-width:550px){
+   .balloon:before{
+    border:10px solid transparent;
+    border-bottom-color:#dfdfdf;
+    border-top-width:0;
+    top:-9px;
+    content:"";
+    display:block;
+    left:30px;
+    position:absolute;
+    width:0;
+    z-index:1;
+    }
+     
+    .balloon:after {
+    border:10px solid transparent;
+    border-bottom-color:#000;
+    border-top-width:0;
+    top:-10px;
+    content:"";
+    display:block;
+    left:30px;
+    position:absolute;
+    width:0;
+    }
+ }
+
+
+//---------------------------------------contact-------
+#con{
+  text-align:left;
+    font-size:12px;
+    @media(min-width:550px){
+      font-size:18px;
+    }
+    a{
+      text-decoration:none;
+    }
+}
+.square_no{
+  line-height:200%;
+  padding: 1.5px 2px;
+  margin: 5px 10px;
+  color:white;
+  background-color:$gray;
+  @media(min-width:550px){
+      margin-left:20%;
+      line-height:300%;
+    }
+}
+ @media(min-width:550px){
+  .link:hover{
+    color:$accent;
+  }
+}
+
+//------------------------------------------------------------footer-----
+footer{
+    padding:20px 0;
+    ul{
+        text-align:center;
+    }
+    li{
+        color: $gray;
+        font-size: 12px;
+        display: inline-block;
+        margin: 0;
+        &:not(:nth-child(1)):before {
+          content:" ・ ";
+        }
+    }
+    .foot_syomei{
+        text-align: center;
+        font-size: 0.7rem;
+        color: $gray;
+    }
+    
+}//footer
+#pageTop{
+  font-size:12px;
+  text-align:right;
+  text-decoration:none;
+  margin:0;
+  @media(min-width:550px){
+    font-size:18px;
+    &:hover{
+      color:$accent;
+    }
+  }
+}
+
+//----------------------------------------------ga----
+
+.ga_main_img{
+  width:100%;
+  @media(min-width:550px){
+    float:left;
+    margin:1px 0;
+    width:30%;
+  }
+}
+.ga_list_img{
+    margin:0;
+    width:100%;
+    font-size:0;
+    text-align: left;
+    li{
+      display:inline;
+      img{
+        padding:2px;
+        width:30%;
+        overflow:hidden;
+        height:3.5rem;
+      }
+    }
+  }
+@media(min-width:550px){
+  .ga_list_img{
+    float:right;
+    margin: 5px 0 0 0;
+    width:70%;
+    font-size:0;
+    text-align: left;
+    li{
+      display:inline;
+      img{
+        padding:5px;
+        width:18%;
+        overflow:hidden;
+        height:5.5rem;
+      }
+    }
+  }
+}
+
+
+//----------------------------------------------------------h2------
+h2{
+  letter-spacing:1px;
+  text-align:center;
+  font-size: 18px;
+  border-bottom:#696969 1.5px dashed ;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  @media(min-width:550px){
+    font-size:25px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+}
+
+//--------------------------------------------h3-----
+h3{
+  letter-spacing:1.2px;
+  text-align: right;
+  position: relative;
+  bottom: 20px;
+  font-size:25px;
+  transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  text-shadow: white 0.5px 0.5px 0px, white -0.5px 0.5px 0px,
+             white 0.5px -0.5px 0px, white -0.5px -0.5px 0px;
+  @media(min-width:550px){
+    font-size:25px;
+  }
+}
+
+//-------------------------------------------------h4----
+h4{
+  font-size:15px;
+  margin-bottom: 10px;
+  @media(min-width:550px){
+    font-size:27px;
+  }
+}
