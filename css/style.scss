@@ -8,7 +8,7 @@ $accent:#781d1d;
 html{
   text-align: center;
   font-size: 12px;
-  background-image: url("../image/kami-min.png");
+  background-image: url("../image/kami.jpg");
   font-family: $myfont;
   background-color: #cdcdcd;
   color: $gray;
@@ -253,17 +253,37 @@ footer{
     }
     
 }//footer
-#pageTop{
-  font-size:12px;
-  text-align:right;
-  text-decoration:none;
-  margin:0;
-  @media(min-width:550px){
-    font-size:18px;
-    &:hover{
-      color:$accent;
+
+//---------------------------------------------pagetop---
+
+#page-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 77%;
+    @media(min-width:550px){
+      bottom: 20px;
+      right: 20px;
     }
-  }
+}
+#page-top a {
+    font-size:5px;
+    background: none;
+    text-decoration: none;
+    color: $accent;
+    width: 80px;
+    padding: 8px 0;
+    text-align: center;
+    display: block;
+    border: 2px #781d1d solid;
+    opacity: 0.8;
+    @media(min-width:550px){
+      font-size:18px;
+    }
+}
+#page-top a:hover {
+	color: #fff;
+	background: $accent;
 }
 
 //----------------------------------------------ga----
@@ -304,13 +324,36 @@ footer{
         padding:5px;
         width:18%;
         overflow:hidden;
-        height:5.5rem;
+        height: 6.5rem;
       }
     }
   }
 }
+//---------------------------------------------------------tr------
 
+.tr_ul{
+  width:100%;
+  display:block;
+  @media(min-width:550px){
+    text-align: left;
+  }
+}
+.tr_li{
+  display:inline-block;
+  text-decoration:none;
+  @media(min-width:550px){
+    width:32.5%;
+  }
+}
 
+//---------------------------------------------------------pankuzu--
+.pankuzu{
+  text-align:left;
+  font-size:8px;
+  @media(min-width:550px){
+    font-size:15px;
+  }
+}
 //----------------------------------------------------------h2------
 h2{
   letter-spacing:1px;
@@ -336,8 +379,8 @@ h3{
   transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
   -webkit-transform: rotate(-15deg);
-  text-shadow: white 0.5px 0.5px 0px, white -0.5px 0.5px 0px,
-             white 0.5px -0.5px 0px, white -0.5px -0.5px 0px;
+  text-shadow: white 0.7px 0.7px 0px, white -0.7px 0.7px 0px,
+             white 0.7px -0.7px 0px, white -0.7px -0.7px 0px;
   @media(min-width:550px){
     font-size:25px;
   }
